@@ -9,10 +9,13 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
   }
 }
 
@@ -100,7 +103,7 @@
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.6 0.25 25);
+    --primary: oklch(0.205 0 0);
     --primary-foreground: oklch(0.985 0 0);
     --secondary: oklch(0.97 0 0);
     --secondary-foreground: oklch(0.205 0 0);
@@ -178,11 +181,11 @@
   .vibrant-gradient {
     background: linear-gradient(135deg, #ff3e00 0%, #ff8c00 100%);
   }
-  
+
   .vibrant-shadow {
     box-shadow: 0 20px 40px -15px rgba(255, 62, 0, 0.3);
   }
-  
+
   .text-vibrant {
     background: linear-gradient(135deg, #ff3e00 0%, #ff8c00 100%);
     -webkit-background-clip: text;
