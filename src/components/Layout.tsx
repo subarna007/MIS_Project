@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
-import { Toaster } from '@/components/ui/sonner';
+import { Toaster } from "sonner";
 
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
